@@ -5,4 +5,4 @@ URDF files for the robot manipulator Quetzal Arm
 ![Quetzal arm](docs/QuetzalArm.jpeg)
 
 
-!(docs/cc_lic.png)
+![License](docs/cc_lic.png)
