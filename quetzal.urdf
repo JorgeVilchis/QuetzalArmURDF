@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<robot name="robot_name">
+
+  <!-- Base Link -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://QuetzalArmURDF/meshes/base.dae"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- Links Definitions -->
+  <link name="link1">
+    <visual>
+      <geometry>
+        <mesh filename="package://QuetzalArmURDF/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+  <!-- Repeat for links 2 to 10 -->
+  <!-- ... -->
+  <link name="link10">
+    <visual>
+      <geometry>
+        <mesh filename="package://QuetzalArmURDF/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="end_effector">
+    <visual>
+      <geometry>
+        <mesh filename="package://QuetzalArmURDF/meshes/grip.dae"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- Joints Definitions -->
+  <joint name="joint0" type="spherical">
+    <parent link="base_link"/>
+    <child link="link1"/>
+    <origin xyz="0 0 0"/>
+  </joint>
+  <!-- Repeat for joints 1 to 9 -->
+  <!-- ... -->
+  <joint name="joint9" type="spherical">
+    <parent link="link9"/>
+    <child link="link10"/>
+    <origin xyz="0 0 0.1"/>
+  </joint>
+  <joint name="end_effector_joint" type="spherical">
+    <parent link="link10"/>
+    <child link="end_effector"/>
+    <origin xyz="0 0 0.1"/>
+  </joint>
+
+</robot>
