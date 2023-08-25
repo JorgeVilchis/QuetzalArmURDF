@@ -18,8 +18,62 @@
       </geometry>
     </visual>
   </link>
-  <!-- Repeat for links 2 to 10 -->
-  <!-- ... -->
+    <link name="link2">
+    <visual>
+      <geometry>
+        <mesh filename="package://QuetzalArmURDF/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="link3">
+    <visual>
+      <geometry>
+        <mesh filename="package://QuetzalArmURDF/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="link4">
+    <visual>
+      <geometry>
+        <mesh filename="package://QuetzalArmURDF/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="link5">
+    <visual>
+      <geometry>
+        <mesh filename="package://QuetzalArmURDF/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="link6">
+    <visual>
+      <geometry>
+        <mesh filename="package://QuetzalArmURDF/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="link7">
+    <visual>
+      <geometry>
+        <mesh filename="package://QuetzalArmURDF/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="link8">
+    <visual>
+      <geometry>
+        <mesh filename="package://QuetzalArmURDF/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="link9">
+    <visual>
+      <geometry>
+        <mesh filename="package://QuetzalArmURDF/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
   <link name="link10">
     <visual>
       <geometry>
@@ -41,8 +95,46 @@
     <child link="link1"/>
     <origin xyz="0 0 0"/>
   </joint>
-  <!-- Repeat for joints 1 to 9 -->
-  <!-- ... -->
+  <joint name="joint1" type="spherical">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="0 0 0.1"/>
+  </joint>
+    <joint name="joint2" type="spherical">
+        <parent link="link2"/>
+        <child link="link3"/>
+        <origin xyz="0 0 0.1"/>
+    </joint>
+    <joint name="joint3" type="spherical">
+        <parent link="link3"/>
+        <child link="link4"/>
+        <origin xyz="0 0 0.1"/>
+    </joint>
+    <joint name="joint4" type="spherical">
+        <parent link="link4"/>
+        <child link="link5"/>
+        <origin xyz="0 0 0.1"/>
+    </joint>
+    <joint name="joint5" type="spherical">
+        <parent link="link5"/>
+        <child link="link6"/>
+        <origin xyz="0 0 0.1"/>
+    </joint>
+    <joint name="joint6" type="spherical">
+        <parent link="link6"/>
+        <child link="link7"/>
+        <origin xyz="0 0 0.1"/>
+    </joint>
+    <joint name="joint7" type="spherical">
+        <parent link="link7"/>
+        <child link="link8"/>
+        <origin xyz="0 0 0.1"/>
+    </joint>
+    <joint name="joint8" type="spherical">
+        <parent link="link8"/>
+        <child link="link9"/>
+        <origin xyz="0 0 0.1"/>
+    </joint>
   <joint name="joint9" type="spherical">
     <parent link="link9"/>
     <child link="link10"/>
