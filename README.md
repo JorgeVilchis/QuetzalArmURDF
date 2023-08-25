@@ -6,5 +6,6 @@ This arm is exclusively designed for simulation and inverse kinematics (IK) expe
 
 ![Quetzal arm](docs/QuetzalArm.jpeg)
 
+![Space Station](docs/SpaceStation.jpeg)
 
 ![License](docs/cc_lic.png)
