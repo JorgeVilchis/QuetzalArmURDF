@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<robot name="quetzal_arm">
+
+  <!-- Base Link -->
+  <link name="base_link">
+    <visual>
+    <origin rpy="0 0 1.570796" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://quetzalarm_description/meshes/base.dae"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- Links Definitions -->
+  <link name="link1">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://quetzalarm_description/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="link2">
+    <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://quetzalarm_description/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="link3">
+    <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://quetzalarm_description/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="link4">
+    <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://quetzalarm_description/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="link5">
+    <visual>
+     <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://quetzalarm_description/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="link6">
+    <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://quetzalarm_description/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="link7">
+    <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://quetzalarm_description/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="link8">
+    <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://quetzalarm_description/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="link9">
+    <visual>
+     <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://quetzalarm_description/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link10">
+    <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://quetzalarm_description/meshes/link.dae"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="end_effector">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://quetzalarm_description/meshes/grip.dae"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- Joints Definitions -->
+  <joint name="joint0" type="revolute">
+    <parent link="base_link"/>
+    <child link="link1"/>
+    <origin xyz="0.1 0 0" rpy="0 0 0"/>
+    <axis xyz="1 1 1"/>
+    <limit effort="33.82" lower="-1.6056" upper="1.6056" velocity="1.256" />
+  </joint>
+  <joint name="joint1" type="revolute">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="0.1 0 0.0" rpy="0 0 0"/>
+    <axis xyz="1 1 1"/>
+     <limit effort="33.82" lower="-1.6056" upper="1.6056" velocity="1.256" />
+  </joint>
+    <joint name="joint2" type="revolute">
+        <parent link="link2"/>
+        <child link="link3"/>
+        <origin xyz="0.1 0 0.0" rpy="0 0 0"/>
+        <axis xyz="1 1 1"/>
+         <limit effort="33.82" lower="-1.6056" upper="1.6056" velocity="1.256" />
+    </joint>
+    <joint name="joint3" type="revolute">
+        <parent link="link3"/>
+        <child link="link4"/>
+        <origin xyz="0.1 0 0.0" rpy="0 0 0"/>
+        <axis xyz="1 1 1"/>
+         <limit effort="33.82" lower="-1.6056" upper="1.6056" velocity="1.256" />
+    </joint>
+    <joint name="joint4" type="revolute">
+        <parent link="link4"/>
+        <child link="link5"/>
+        <origin xyz="0.1 0 0.0" rpy="0 0 0"/>
+        <axis xyz="1 1 1"/>
+         <limit effort="33.82" lower="-1.6056" upper="1.6056" velocity="1.256" />
+    </joint>
+    <joint name="joint5" type="revolute">
+        <parent link="link5"/>
+        <child link="link6"/>
+        <origin xyz="0.1 0 0.0" rpy="0 0 0"/>
+        <axis xyz="1 1 1"/>
+         <limit effort="33.82" lower="-1.6056" upper="1.6056" velocity="1.256" />
+    </joint>
+    <joint name="joint6" type="revolute">
+        <parent link="link6"/>
+        <child link="link7"/>
+        <origin xyz="0.1 0 0.0" rpy="0 0 0"/>
+        <axis xyz="1 1 1"/>
+         <limit effort="33.82" lower="-1.6056" upper="1.6056" velocity="1.256" />
+    </joint>
+    <joint name="joint7" type="revolute">
+        <parent link="link7"/>
+        <child link="link8"/>
+        <origin xyz="0.1 0 0.0" rpy="0 0 0"/>
+        <axis xyz="1 1 1"/>
+         <limit effort="33.82" lower="-1.6056" upper="1.6056" velocity="1.256" />
+    </joint>
+    <joint name="joint8" type="revolute">
+        <parent link="link8"/>
+        <child link="link9"/>
+        <origin xyz="0.1 0 0.0" rpy="0 0 0"/>
+        <axis xyz="1 1 1"/>
+         <limit effort="33.82" lower="-1.6056" upper="1.6056" velocity="1.256" />
+    </joint>
+  <joint name="joint9" type="revolute">
+    <parent link="link9"/>
+    <child link="link10"/>
+    <origin xyz="0.1 0 0.0" rpy="0 0 0"/>
+    <axis xyz="1 1 1"/>
+     <limit effort="33.82" lower="-1.6056" upper="1.6056" velocity="1.256" />
+  </joint>
+  <joint name="end_effector_joint" type="revolute">
+    <parent link="link10"/>
+    <child link="end_effector"/>
+    <origin xyz="0.1 0 0.0" rpy="0 0 0"/>
+    <axis xyz="1 1 1"/>
+     <limit effort="33.82" lower="-1.6056" upper="1.6056" velocity="1.256" />
+  </joint>
+
+</robot>
